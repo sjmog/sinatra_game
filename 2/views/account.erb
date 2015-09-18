@@ -1,0 +1,12 @@
+<% if @user %>
+
+<h1>Welcome to your account, <%= @user %></h1>
+<form action="/new-game" method="post">
+  <input type="submit" value="Play a new game">
+</form>
+
+<% else %>
+
+<p><a href="/">Please sign up</a> first.</p>
+
+<% end %>
